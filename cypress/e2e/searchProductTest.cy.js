@@ -5,13 +5,8 @@ describe('Перевірка роботи пошуку', () => {
         cy.get('a').contains('Flamingo')
         cy.get('#search_in_search_page_input').clear().type('Світиться у темряві{enter}')
         cy.get('a').contains('світиться у темряві')
-        cy.get('#search_in_search_page_input').clear().type('Неіснуючий товар{enter}')
+        cy.get('#search_in_search_page_input').clear().type('Ігрвшка{enter}')
         cy.contains('Нема товарів', {timeout: 6000})
     })
 })
-// describe('Перевірка роботи фільтрів', () => {
-//     it('Пройдено', () => {
-//         cy.visit('https://dog.testoviydomen.fun/')
-//     })
-// })
 
