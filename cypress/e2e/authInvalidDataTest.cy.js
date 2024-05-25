@@ -33,7 +33,7 @@ describe('Перевірка роботи входу при невалідних
         cy.visit('https://dog.testoviydomen.fun/login/')
 
         cy.get('#email').type('0000000000')
-        // Зашибісь в email телефон вводити)))
+
         cy.get('#password').type('incorrectPassword')
 
         cy.get('button[type="submit"]').click()

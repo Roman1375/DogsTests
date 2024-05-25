@@ -5,7 +5,6 @@ describe('Перевірка роботи фільтраів', () => {
             cy.wrap(filter).click()
         })
         cy.get('[id^="collapse-attribute-"]').each((element) => {
-            // тут ви можете виконати дії з кожним елементом
             cy.wrap(element).should('exist');
         });
     })
