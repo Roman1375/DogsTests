@@ -39,7 +39,6 @@ describe('Перевірка роботи фільтраів', () => {
         cy.get(':nth-child(1) > .product_min > div.product_name > .product_name').click()
         cy.contains('Характеристики').click()
         cy.contains('синтетика')
-
     })
 
     it('Кнопка скидання фільтрів працює', () => {

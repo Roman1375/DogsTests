@@ -11,7 +11,8 @@
   "dependencies": {
     "cypress": "^13.10.0"
   },
-    "devDependencies": {
-        "cypress": "^13.10.0"
-    }
+  "devDependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.10.0"
+  }
 }
