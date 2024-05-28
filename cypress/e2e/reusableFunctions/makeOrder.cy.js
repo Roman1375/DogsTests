@@ -1,6 +1,5 @@
 export function makeOrder(){
     cy.clearLocalStorage()
-    cy.viewport(1280, 720)
     cy.visit('https://dog.testoviydomen.fun/catalog/harchuvannya-sobak/likuvalnii-korm-dlia-sobak/korm-konservovanii-dolina-noteci-premium-pc-intestinal-dlia-sobak-z-problemami-shlunka/?variant=DN%20185%20(254)')
     cy.get('.current_option').contains('Купити').click()
     cy.get('.toast').should('be.visible').should('contain.text', 'Додано до кошика')
